@@ -798,19 +798,19 @@ function globalRank(name) {
 }
 
 async function loadData() {
-	try {
-		var res = await fetch("players.json?t=" + Date.now());
-		var raw = await res.json();
-		players = raw.map(function(p) {
-			p.prestige = calcPts(p);
-			return p;
-		});
-		document.getElementById("plcount").textContent = players.length + " players";
-		buildTabs();
-		renderBoard();
-	} catch(e) {
-		document.getElementById("board").innerHTML = '<div class="loader" style="color:#ff4444">Couldnt load players.json — check its in the same folder</div>';
-	}
+    try {
+        var res = await fetch("./players.json?t=" + Date.now());
+        var raw = await res.json();
+        players = raw.map(function(p) {
+            p.prestige = calcPts(p);
+            return p;
+        });
+        document.getElementById("plcount").textContent = players.length + " players";
+        buildTabs();
+        renderBoard();
+    } catch(e) {
+        document.getElementById("board").innerHTML = '<div class="loader" style="color:#ff4444">Could not load players.json — make sure it is in the same folder as your HTML file.</div>';
+    }
 }
 
 function buildTabs() {
