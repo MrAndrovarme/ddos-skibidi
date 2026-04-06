@@ -13,5 +13,18 @@
       "Mace": "HT5"
     }
   },
-
+  {
+    "name": "nikavarme",
+    "region": "GE",
+    "tiers": {
+      "Sword": "LT5",
+      "Vanilla": "UR",
+      "UHC": "UR",
+      "Pot": "LT5",
+      "NetherOP": "UR",
+      "SMP": "UR",
+      "Axe": "UR",
+      "Mace": "UR"
+    }
+  }
 ]
