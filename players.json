@@ -40,5 +40,19 @@
       "Axe": "LT4",
       "Mace": "HT5"
     }
+  },
+      {
+    "name": "_D_A_C_H_U_",
+    "region": "GE",
+    "tiers": {
+      "Sword": "LT5",
+      "Vanilla": "HT4",
+      "UHC": "LT5",
+      "Pot": "UR",
+      "NetherOP": "UR",
+      "SMP": "UR",
+      "Axe": "HT5",
+      "Mace": "UR"
+    }
   }
 ]
