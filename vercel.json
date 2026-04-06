@@ -1,14 +1,11 @@
 {
-  "rewrites": [
-    { "source": "/players.json", "destination": "/players.json" }
+  "version": 2,
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "players.json", "use": "@vercel/static" }
   ],
-  "headers": [
-    {
-      "source": "/players.json",
-      "headers": [
-        { "key": "Content-Type", "value": "application/json" },
-        { "key": "Cache-Control", "value": "no-cache" }
-      ]
-    }
+  "routes": [
+    { "src": "/players.json", "dest": "/players.json" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
