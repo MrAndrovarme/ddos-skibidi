@@ -797,20 +797,21 @@ function globalRank(name) {
 	return "-";
 }
 
-async function loadData() {
-	try {
-		var res = await fetch("./players.json?t=" + Date.now());
-		var raw = await res.json();
-		players = raw.map(function(p) {
-			p.prestige = calcPts(p);
-			return p;
+function loadData() {
+	fetch("./players.json?t=" + Date.now())
+		.then(function(res) { return res.json(); })
+		.then(function(raw) {
+			players = raw.map(function(p) {
+				p.prestige = calcPts(p);
+				return p;
+			});
+			document.getElementById("plcount").textContent = players.length + " players";
+			buildTabs();
+			renderBoard();
+		})
+		.catch(function(e) {
+			document.getElementById("board").innerHTML = '<div class="loader" style="color:#ff4444">Couldnt load players.json</div>';
 		});
-		document.getElementById("plcount").textContent = players.length + " players";
-		buildTabs();
-		renderBoard();
-	} catch(e) {
-		document.getElementById("board").innerHTML = '<div class="loader" style="color:#ff4444">Couldnt load players.json — check its in the same folder</div>';
-	}
 }
 
 function buildTabs() {
