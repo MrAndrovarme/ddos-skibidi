@@ -799,7 +799,7 @@ function globalRank(name) {
 
 async function loadData() {
 	try {
-		var res = await fetch("./players.json?t=" + Date.now());
+		var res = await fetch("players.json?t=" + Date.now());
 		var raw = await res.json();
 		players = raw.map(function(p) {
 			p.prestige = calcPts(p);
