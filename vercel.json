@@ -1,0 +1,14 @@
+{
+  "rewrites": [
+    { "source": "/players.json", "destination": "/players.json" }
+  ],
+  "headers": [
+    {
+      "source": "/players.json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json" },
+        { "key": "Cache-Control", "value": "no-cache" }
+      ]
+    }
+  ]
+}
