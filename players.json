@@ -26,5 +26,19 @@
       "Axe": "UR",
       "Mace": "UR"
     }
+  },
+    {
+    "name": "Spasp3t",
+    "region": "GE",
+    "tiers": {
+      "Sword": "HT5",
+      "Vanilla": "UR",
+      "UHC": "HT4",
+      "Pot": "HT4",
+      "NetherOP": "HT4",
+      "SMP": "LT3",
+      "Axe": "LT4",
+      "Mace": "HT5"
+    }
   }
 ]
