@@ -54,5 +54,19 @@
       "Axe": "HT5",
       "Mace": "LT5"
     }
+  },
+        {
+    "name": "Giuliogrash",
+    "region": "ITA",
+    "tiers": {
+      "Sword": "LT3",
+      "Vanilla": "HT5",
+      "UHC": "UR",
+      "Pot": "UR",
+      "NetherOP": "UR",
+      "SMP": "UR",
+      "Axe": "HT4",
+      "Mace": "UR"
+    }
   }
 ]
