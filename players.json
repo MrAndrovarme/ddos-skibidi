@@ -68,5 +68,19 @@
       "Axe": "HT4",
       "Mace": "UR"
     }
+  },
+          {
+    "name": "yabo",
+    "region": "GE",
+    "tiers": {
+      "Sword": "LT1",
+      "Vanilla": "HT5",
+      "UHC": "UR",
+      "Pot": "UR",
+      "NetherOP": "UR",
+      "SMP": "UR",
+      "Axe": "HT4",
+      "Mace": "UR"
+    }
   }
 ]
